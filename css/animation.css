@@ -1,0 +1,33 @@
+#gameOver {
+    animation-name: appear-left;
+    animation-duration: .3s;
+}
+
+#gameBoard {
+    animation-name: appear-up;
+    animation-duration: .3s; 
+}
+
+@keyframes appear-up {
+    0% {
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes appear-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

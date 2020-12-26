@@ -3,7 +3,7 @@ const BACK = "card_back";
 const CARD = "card";
 const ICON = "icon";
 
-startGame()
+startGame();
 
 function startGame() {
     initializeCards(game.createCardsFromTechs());

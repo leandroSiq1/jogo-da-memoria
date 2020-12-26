@@ -28,9 +28,9 @@ html, body {
     height: 120px;
 
     position: relative;
-
+    animation-name: appear-up;
+    animation-duration: .3s; 
     transform-style: preserve-3d;
-
     transition: transform .5s;
 
     cursor: pointer;
@@ -60,6 +60,11 @@ html, body {
     background: #101c2c;
 }
 
+.card_front img {
+    width: 90%;
+    height: 90%;
+}
+
 .card_back {
     color: #101c2c;
     font-size: 30px;
@@ -76,6 +81,8 @@ html, body {
     background: rgba(0,0,0,0.8);
     font-size: 50px;
     color: #fff;
+    
+    text-align: center;
 
     display: none;
     align-items: center;
@@ -93,4 +100,35 @@ html, body {
     border-radius: 10px;
 
     cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    #gameBoard {
+        width: 100%;
+
+        padding-top: 30px;
+        padding-bottom: 50px;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    html, body {
+        display: initial;
+    }
+
+    .card {
+        width: 70px;
+        height: 70px;
+    
+        position: relative;
+        animation-name: appear-up;
+        animation-duration: .3s; 
+        transform-style: preserve-3d;
+        transition: transform .5s;
+    
+        cursor: pointer;
+    }
 }
